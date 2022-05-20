@@ -74,6 +74,7 @@ main ul {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
+  flex: 1;
 }
 
 #drinks-wrapper {
@@ -88,6 +89,7 @@ main ul {
   align-items: center;
   gap: 1.3rem;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .drink-name {
@@ -132,6 +134,23 @@ main ul {
 main p:last-child {
   font-size: calc(var(--font-size) * 1.5);
   padding: 3rem 0;
+}
+
+@media (max-width: 1199px) {
+  .drink {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  main ul {
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .drink {
+    flex: auto;
+  }
 }
 
 /* Footer Styles */
