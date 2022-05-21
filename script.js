@@ -2,7 +2,6 @@ const buttons = document.querySelectorAll(".drink-buttons")
 
 function prepareDrink(drink) {
   const chosenDrink = drink.target.id;
-  console.log(drink)
   const loader = document.getElementById("loader-wrapper")
   const parentElement = document.createElement("div")
   parentElement.style.padding = "2rem";
@@ -28,6 +27,8 @@ function prepareDrink(drink) {
     spinner.style.display = "none"
     resetButton.style.display = "block"
     resetButton.addEventListener("click", (e) => {
+      console.log(e.path)
+      console.log(e.path[6])
       e.path[6].location.reload()
     })
   }
