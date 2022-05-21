@@ -1,5 +1,8 @@
 const buttons = document.querySelectorAll(".drink-buttons")
 
+buttons.forEach(element => element.addEventListener("click", prepareDrink))
+
+
 function prepareDrink(drink) {
   const chosenDrink = drink.target.id;
   const loader = document.getElementById("loader-wrapper")
@@ -87,6 +90,6 @@ function prepareDrink(drink) {
   }
 }
 
-buttons.forEach(element => element.addEventListener("click", prepareDrink))
+
 
 
