@@ -102,7 +102,8 @@ main ul {
   padding: 0 1rem;
 }
 
-.drink-buttons {
+.drink-buttons,
+.reset-drink-button {
   padding: 0.4rem 1.5rem;
   border-radius: 5px;
   background-color: var(--orange);
@@ -178,6 +179,7 @@ footer a:hover {
 }
 
 
+
 /* Loader Style */
 
 #loader-wrapper {
@@ -214,3 +216,15 @@ footer a:hover {
       transform: rotate(360deg);
   }
   } 
+
+  /* Gif styles */
+
+  #lemon-tea-gif,
+  #black-coffee-gif,
+  #hot-chocolate-gif,
+  .reset-drink-button {
+    display: none;
+    margin: 2rem;
+  }
+
+
