@@ -112,7 +112,8 @@ main ul {
   font-weight: 600;
 }
 
-.drink-buttons:hover {
+.drink-buttons:hover,
+.reset-drink-button:hover {
   cursor: pointer;
   background-color: var(--dkorange);
 }
